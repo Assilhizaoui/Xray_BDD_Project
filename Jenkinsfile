@@ -1,6 +1,6 @@
 node() {
 
-    def repoURL = 'https://github.com/gabrielstar/cucumber.git'
+    def repoURL = 'https://github.com/Assilhizaoui/Xray_BDD_Project.git'
 
     stage("Prepare Workspace") {
         cleanWs()

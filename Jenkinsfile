@@ -9,7 +9,7 @@ node() {
     stage('Cucumber Tests') {
         withMaven(maven: 'maven3.8.4') {
             sh """
-			cd ${env.WORKSPACE_LOCAL}
+			
 			mvn clean test
 		"""
         }

@@ -18,7 +18,7 @@ node() {
     }
 	stage('Import results to Xray') {
 
-		def description = "[BUILD_URL|'http://localhost:8080/browse/EX-1']"
+		def description = "[BUILD_URL|http://localhost:8080/browse/EX-1]"
 		def labels = '["regression","automated_regression"]'
 		def environment = "DEV"
 		def testExecutionFieldId = 10005

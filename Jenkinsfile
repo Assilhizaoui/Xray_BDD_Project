@@ -8,10 +8,10 @@ node() {
     }
     stage('Cucumber Tests') {
         withMaven(maven: 'maven3.8.4') {
-            sh """
+            
 			
-			mvn clean test
-		"""
+		bat	'mvn clean test'
+		
         }
     }
     stage('Expose report') {

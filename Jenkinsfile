@@ -7,9 +7,7 @@ node() {
         git branch: 'main', credentialsId: '', url: repoURL
     }
     stage('Cucumber Tests') {
-        withMaven(maven: 'maven3.8.4') {
-            
-			
+        withMaven(maven: 'maven3.8.4') {			
 		bat	'mvn clean test'
 		
         }
@@ -23,10 +21,10 @@ node() {
 		def description = "[BUILD_URL|${env.BUILD_URL}]"
 		def labels = '["regression","automated_regression"]'
 		def environment = "DEV"
-		def testExecutionFieldId = 10007
-		def testEnvironmentFieldName = "customfield_10132"
+		def testExecutionFieldId = 10005
+		def testEnvironmentFieldName = "customfield_10136"
 		def projectKey = "ExpertTeamBDDProject"
-		def xrayConnectorId = '3ecdab2a-9ccb-4b99-99cb-2312e9135dc5'
+		def xrayConnectorId = '30b960a7-8d25-4744-b9d2-ac3e7bb531b4'
 		def info = '''{
 				"fields": {
 					"project": {

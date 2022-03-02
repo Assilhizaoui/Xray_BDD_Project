@@ -10,7 +10,7 @@ Feature: Background Feature
     When I attempt to solve it
     Then I surely succeed
 
-  @smoke @EX-2
+  @smoke @EX-9
   Scenario: Second Hello
     Given I have "second" task
     And Step from "Second Hello" in "Background Feature" feature file

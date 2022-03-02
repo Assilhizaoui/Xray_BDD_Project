@@ -1,6 +1,6 @@
 Feature: First Feature
 
-  @EX-8
+  @hello @EX-8
   Scenario: First Hello
     Given I have "first" task
     And Step from "First Hello" in "First Feature" feature file

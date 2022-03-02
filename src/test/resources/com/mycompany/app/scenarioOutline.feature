@@ -4,7 +4,8 @@ Feature: Background Feature
   Background: I have a job
     Given The job is nice
     And I get paid
-
+    
+  @outline
   Scenario Outline: <which> Hello
     Given I have "<what>" task
     And Step from "<which> Hello" in "Background Feature" feature file

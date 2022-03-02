@@ -5,7 +5,7 @@ import cucumber.api.junit.Cucumber;
 import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(format = { "json:target/cucumber.json" }, tags = { "@hello" , "@somke" })
+@CucumberOptions(format = { "json:target/cucumber.json" }, tags = { "@hello,@somke"})
 public class BaseRunnerTest {
 
 }

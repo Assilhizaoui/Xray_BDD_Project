@@ -5,7 +5,7 @@ node() {
 	stage("Prepare Workspace") {
         bat 'cleanWs()'
        bat 'env.WORKSPACE_LOCAL = sh(returnStdout: true, script: 'pwd').trim()'
-        bat 'env.BUILD_TIME = sh(returnStdout: true, script: 'date +%F-%T').trim()'
+        //bat 'env.BUILD_TIME = sh(returnStdout: true, script: 'date +%F-%T').trim()'
         bat 'echo "Workspace set to:" + env.WORKSPACE_LOCAL'
         bat 'echo "Build time:" + env.BUILD_TIME'
     }
